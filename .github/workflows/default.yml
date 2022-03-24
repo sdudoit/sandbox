@@ -6,9 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: ls -alh
-      - run: echo "Generate error!!"; exit 1;
   test2:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo "No error!!"
+      - run: echo "Generate error!!"; exit 1;
